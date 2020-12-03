@@ -1,0 +1,55 @@
+.navbar {
+  background-color: #ffe600;
+  display: flex;
+  flex-direction: column;
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .nav-logo {
+      width: 140px;
+      height: 40px;
+      margin: 00.5rem 0;
+    }
+    .input {
+      width: 520px;
+      height: 35px;
+      border: none;
+      border-radius: 2px;
+      box-shadow: 3px 5px 10px #a7a5a53f;
+      &::placeholder {
+        font-family: "Nunito", sans-serif;
+        font-size: 1rem;
+        padding-left: 0.5rem;
+        color: #cac7c7;
+      }
+    }
+    .free-shipping {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+  }
+  .buttons-wrapper {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.9rem;
+    .shipping {
+      margin: 0.5rem 0rem;
+    }
+    .buttons {
+      display: flex;
+      padding: 0.5rem 0;
+      .button {
+        margin-right: 0.8rem;
+        font-size: 0.9rem;
+        &.options {
+          color: #333;
+        }
+        &.account {
+          font-size: 0.9rem;
+          color: rgb(26, 26, 26);
+        }
+      }
+    }
+  }
+}

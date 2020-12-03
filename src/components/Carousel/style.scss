@@ -1,0 +1,35 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  .card {
+    display: flex;
+    flex-grow: 1;
+    width: calc(33% - 20px);
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.075);
+      transition: 0.3s;
+    }
+    .card-info {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0.2rem;
+      .card-price {
+        font-weight: bold;
+        padding-top: 0.2rem;
+      }
+    }
+    .card-picture {
+      margin: 5px;
+      border-radius: 5px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

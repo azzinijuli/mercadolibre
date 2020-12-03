@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import data from "./data/data.json";
+import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="home-wrapper">
+      <div className="logo-countries-container">
+        <div className="logo-container">
+          <img
+            className="logo"
+            src="https://i.postimg.cc/sg5KvnsV/codo-codo-mercado-libre-cambia-0-40-768-477.png"
+            alt="logo"
+          />
+        </div>
+        <div className="countries-container">
+          {data.map((country, key) => {
+            return (
+              <Link className="country-container" to={`/shop/${country.site}`}>
+                <img className="country-flag" src={country.flag} />
+                <p className="country-name">{country.name}</p>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    </section>
   );
 }
 
