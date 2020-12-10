@@ -7,11 +7,11 @@ function Carousel(props) {
       <div className="cards-container">
         {props.products
           .filter((item) => {
-            return item.title.includes(props.filterSearch);
+            return item.title.toLowerCase().includes(props.filterSearch);
           })
           .map((item, key) => {
             return (
-              <div className="card">
+              <div className="card" key={key}>
                 <img className="card-picture" src={item.thumbnail} alt="pic" />
                 <div className="card-info">
                   <p className="card-title">{item.title}</p>

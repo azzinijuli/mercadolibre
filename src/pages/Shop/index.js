@@ -15,7 +15,7 @@ function Shop() {
 
   async function fetchData() {
     const data = await fetch(
-      `https://api.mercadolibre.com/sites/${id}/search?q=auriculares`
+      `https://api.mercadolibre.com/sites/${id}/search?q=chocolates`
     );
     const dataJson = await data.json();
     setProducts(dataJson.results);

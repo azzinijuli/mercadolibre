@@ -21,7 +21,7 @@
       .country-container {
         display: flex;
         align-items: center;
-        padding: 0.2rem 0.7rem;
+        padding: 0.2rem 0.8rem;
         margin-top: 0.2rem;
         background-color: #f1f1f180;
         border-radius: 5px;
@@ -35,6 +35,9 @@
           width: 28px;
           height: 18px;
           margin-right: 0.3rem;
+        }
+        .country-name {
+          font-size: 1.2em;
         }
       }
     }
