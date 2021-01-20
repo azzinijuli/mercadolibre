@@ -1,0 +1,77 @@
+[
+  {
+    "img": "https://i.postimg.cc/kGptGpXz/1826-1.jpg",
+    "price": "147.250",
+    "type": "based"
+  },
+  {
+    "img": "https://i.postimg.cc/dtgyKpfT/450-1000.jpg",
+    "price": "164.999",
+    "type": "based"
+  },
+  {
+    "img": "https://i.postimg.cc/HWZM6V4z/Apple-new-macbook-air-new-magic-keyboard-03182020.jpg",
+    "price": "189.999",
+    "type": "based"
+  },
+  {
+    "img": "https://i.postimg.cc/yYDZtsLH/fotonoticia-20200318144340-420.jpg",
+    "price": "371.184",
+    "type": "based"
+  },
+  {
+    "img": "https://i.postimg.cc/4x7CwvDD/D-NQ-NP-926928-MLA40312168062-012020-V.jpg",
+    "price": "599.999",
+    "type": "based"
+  },
+  {
+    "img": "https://i.postimg.cc/RFjWznsx/auriculares-inalambricos-sony-ch400-gris.jpg",
+    "price": "5.499",
+    "type": "sale"
+  },
+  {
+    "img": "https://i.postimg.cc/yxck6Ytg/auriculares-inalambricos-sony-rf811rk.jpg",
+    "price": "8.599",
+    "type": "sale"
+  },
+  {
+    "img": "https://i.postimg.cc/c1nKBXCx/sony-wireless-noise-cancelling-headphones-wh-1000xm3.jpg",
+    "price": "27.800",
+    "type": "sale"
+  },
+  {
+    "img": "https://i.postimg.cc/pLXX4ZWn/1457370364-1220508.jpg",
+    "price": "12.899",
+    "type": "sale"
+  },
+  {
+    "img": "https://i.postimg.cc/GhbcTQsS/6329901.jpg",
+    "price": "2.498",
+    "type": "sale"
+  },
+  {
+    "img": "https://i.postimg.cc/63GrkZVC/450-1000.jpg",
+    "price": "41.999",
+    "type": "interes"
+  },
+  {
+    "img": "https://i.postimg.cc/zfQw27hJ/61-HFJw-SDQ4-L-AC-SX466.jpg",
+    "price": "26.000",
+    "type": "interes"
+  },
+  {
+    "img": "https://i.postimg.cc/D0rqZKMZ/Samsung-Galaxy-A01-Core-04-Abaddy-Express.jpg",
+    "price": "12.999",
+    "type": "interes"
+  },
+  {
+    "img": "https://i.postimg.cc/3rmj9gxT/SM-A315-GZBMPEO-1.jpg",
+    "price": "34.999",
+    "type": "interes"
+  },
+  {
+    "img": "https://i.postimg.cc/SRdJ3QPW/S20-FE-Navy-SKUimage-MO-img.jpg",
+    "price": "227.999",
+    "type": "interes"
+  }
+]

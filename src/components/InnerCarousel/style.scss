@@ -1,0 +1,19 @@
+.products-wrapper {
+  display: flex;
+  margin-top: 1.5rem;
+  .product-wrapper {
+    background-color: white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    .product-image {
+      width: 230px;
+      height: 230px;
+      object-fit: cover;
+      display: flex;
+      justify-content: center;
+    }
+    .product-price {
+      margin: 1rem;
+    }
+  }
+}

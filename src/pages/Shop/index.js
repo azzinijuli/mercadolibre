@@ -2,10 +2,14 @@ import React, { useState, useEffect } from "react";
 import "../Shop/style.scss";
 import Navbar from "../../components/Navbar";
 import Carousel from "../../components/Carousel";
+import dataprod from "../../data/dataprod.json";
 import { useParams } from "react-router-dom";
 
 function Shop() {
-  const { id } = useParams();
+  const [based, setBased] = useState([]);
+  const [sale, setSale] = useState([]);
+  const [interes, setInteres] = useState([]);
+  /*const { id } = useParams();
   const [search, setSearch] = useState([]);
   const [products, setProducts] = useState([]);
 
@@ -23,13 +27,34 @@ function Shop() {
 
   function handleCallback(inputValue) {
     setSearch(inputValue);
+  }*/
+
+  function filterProducts() {
+    const filteredBased = dataprod.filter((product) => {
+      return product.type == "based";
+    });
+    const filteredSale = dataprod.filter((product) => {
+      return product.type == "sale";
+    });
+    const filteredInteres = dataprod.filter((product) => {
+      return product.type == "interes";
+    });
+    setBased(filteredBased);
+    setSale(filteredSale);
+    setInteres(filteredInteres);
   }
 
+  useEffect(() => {
+    filterProducts();
+  }, []);
+
   return (
-    <section>
-      <Navbar handleCallback={(e) => handleCallback(e)} />
-      <Carousel filterSearch={search} products={products} />
-    </section>
+    <main className="home">
+      <Navbar /*handleCallback={(e) => handleCallback(e)}*/ />
+      <Carousel title="Basado en tu última visita" filter={based} />
+      <Carousel title="Ofertas" filter={sale} />
+      <Carousel title="También te puede interesar" filter={interes} />
+    </main>
   );
 }
 
