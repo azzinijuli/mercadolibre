@@ -4,10 +4,19 @@ import Slider from "react-slick";
 
 function InnerCarousel(props) {
   const settings = {
-    slidesToShow: 4,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
     slidesToScroll: 1,
-    variableWidth: true,
-    variableHeight: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="products-wrapper">

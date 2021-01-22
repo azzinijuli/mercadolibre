@@ -1,6 +1,13 @@
 .products-wrapper {
   display: flex;
   margin-top: 1.5rem;
+  background-color: red;
+  div.slick-slider.slick-initialized div.slick-list {
+    margin-right: 1rem;
+    height: 200px;
+    width: 1000px;
+    background-color: green;
+  }
   .product-wrapper {
     background-color: white;
     margin: 0.5rem;
