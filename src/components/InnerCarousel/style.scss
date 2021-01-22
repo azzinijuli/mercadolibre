@@ -3,17 +3,42 @@
   margin-top: 1.5rem;
   .product-wrapper {
     background-color: white;
-    padding: 0.5rem;
     margin: 0.5rem;
-    .product-image {
-      width: 230px;
-      height: 230px;
-      object-fit: cover;
-      display: flex;
-      justify-content: center;
+    border-radius: 2px;
+    box-shadow: 3px 5px 10px #a7a5a53f;
+    &:hover {
+      cursor: pointer;
+      transition: 2s ease-in-out;
+      &.active {
+        .product-name {
+          display: block;
+        }
+      }
     }
-    .product-price {
+    .image-container {
+      padding: 1rem;
+      border-bottom: 1px solid #ebebeb;
+      .product-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .product-description {
+      display: flex;
+      flex-direction: column;
       margin: 1rem;
+      .product-price {
+        display: inline-block;
+        margin: 1rem 0;
+        font-size: 1.3em;
+      }
+      .product-name {
+        font-size: 0.8em;
+        display: none;
+      }
     }
   }
 }

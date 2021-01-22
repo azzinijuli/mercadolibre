@@ -5,10 +5,10 @@ import InnerCarousel from "../InnerCarousel";
 function Carousel(props) {
   return (
     <>
-      <div className="carousel-container">
+      <section className="carousel-container">
         <span className="carousel-title">{props.title}</span>
         <InnerCarousel filter={props.filter} />
-      </div>
+      </section>
     </>
   );
 }

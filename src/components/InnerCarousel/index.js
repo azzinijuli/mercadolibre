@@ -6,9 +6,14 @@ function InnerCarousel(props) {
     <div className="products-wrapper">
       {props.filter.map((product) => {
         return (
-          <div className="product-wrapper">
-            <img src={product.img} alt="image" className="product-image" />
-            <span className="product-price">${product.price}</span>
+          <div className="product-wrapper active">
+            <div className="image-container">
+              <img src={product.img} alt="image" className="product-image" />
+            </div>
+            <div className="product-description">
+              <span className="product-price">$ {product.price}</span>
+              <span className="product-name">{product.name}</span>
+            </div>
           </div>
         );
       })}
