@@ -8,10 +8,14 @@
     box-shadow: 3px 5px 10px #a7a5a53f;
     &:hover {
       cursor: pointer;
-      transition: 2s ease-in-out;
+      transform: scale(1.025);
+      transition: 0.2s ease-in-out;
+      box-shadow: 3px 5px 10px #7573734f;
       &.active {
         .product-name {
-          display: block;
+          opacity: 1;
+          visibility: visible;
+          transition: 0.2s ease-in-out;
         }
       }
     }
@@ -32,12 +36,14 @@
       margin: 1rem;
       .product-price {
         display: inline-block;
-        margin: 1rem 0;
         font-size: 1.3em;
       }
       .product-name {
-        font-size: 0.8em;
-        display: none;
+        font-size: 0.85em;
+        line-height: 1.3em;
+        opacity: 0;
+        visibility: hidden;
+        margin-top: 0.5rem;
       }
     }
   }
