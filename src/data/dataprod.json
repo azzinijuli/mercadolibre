@@ -18,15 +18,27 @@
     "type": "based"
   },
   {
-    "name": "Notebook Dell Inspiron 5593",
-    "img": "https://i.postimg.cc/4x7CwvDD/D-NQ-NP-926928-MLA40312168062-012020-V.jpg",
-    "price": "599.999",
+    "name": "Notebook Dell Inspiron 3493 14''. Intel® Core I5",
+    "img": "https://i.postimg.cc/ncK33S9M/8b9923641f4d8ef73527a27a15a4a4ad4c8c33b5-e4880207-588c-4953-83d1-20486e3c1655-1024x1024-2x.jpg",
+    "price": "120.399",
     "type": "based"
   },
   {
     "name": "Macbook Air A2179 Space Gray",
     "img": "https://i.postimg.cc/yYDZtsLH/fotonoticia-20200318144340-420.jpg",
     "price": "371.184",
+    "type": "based"
+  },
+  {
+    "name": "Notebook Dell Latitude 3510 15,6''. Intel® Core I7",
+    "img": "https://i.postimg.cc/wTDjZg0g/L3510-UBUNTU-2-3629c8d1-8b5b-4330-9ce5-4c02fb1d903d-1024x1024-2x.jpg",
+    "price": "163.999",
+    "type": "based"
+  },
+  {
+    "name": "Notebook Dell Inspiron 5593 15,6''. Intel® Core I7 ",
+    "img": "https://i.postimg.cc/wjZg0Bm6/0b84e37d92d71c3a1a2fea0bba555bd593171fce-b01de2f7-4774-427f-a945-aae38629e91b-1024x1024-2x.jpg",
+    "price": "179.999",
     "type": "based"
   },
   {
@@ -54,9 +66,21 @@
     "type": "sale"
   },
   {
-    "name": " Auriculares Sony ZX Series MDR-ZX110",
+    "name": "Auriculares Sony ZX Series MDR-ZX110",
     "img": "https://i.postimg.cc/GhbcTQsS/6329901.jpg",
     "price": "2.498",
+    "type": "sale"
+  },
+  {
+    "name": "Auriculares Gamer Razer Kraken X Lite",
+    "img": "https://i.postimg.cc/Kvg242Ww/razer-kraken-x-usb-2019-render-v04.jpg",
+    "price": "5395",
+    "type": "sale"
+  },
+  {
+    "name": "Auriculares gamer inalámbricos HyperX",
+    "img": "https://i.postimg.cc/zXk9yGjd/467-AURICULAR-HYPERX-CLOUD-FLIGHT-WIRELESS1597792577728.jpg",
+    "price": "16590",
     "type": "sale"
   },
   {
@@ -67,7 +91,7 @@
   },
   {
     "name": "Samsung Galaxy A51 128GB RAM",
-    "img": "https://i.postimg.cc/zfQw27hJ/61-HFJw-SDQ4-L-AC-SX466.jpg",
+    "img": "https://i.postimg.cc/mZYnng0b/samsung-galaxy-a51-dual-sim-en-blanco-de-128gb-y-4gb-ram-sm-a515f-ds.jpg",
     "price": "26.000",
     "type": "interes"
   },
@@ -87,6 +111,18 @@
     "name": "Samsung Galaxy S20 Fan Edition 5G",
     "img": "https://i.postimg.cc/SRdJ3QPW/S20-FE-Navy-SKUimage-MO-img.jpg",
     "price": "227.999",
+    "type": "interes"
+  },
+  {
+    "name": "Samsung Galaxy A71 128 GB",
+    "img": "https://i.postimg.cc/Z580B3QG/samsung-a71-plateado-600x600.jpg",
+    "price": "69.000",
+    "type": "interes"
+  },
+  {
+    "name": "Celular Galaxy Note20 Ultra Bronce",
+    "img": "https://i.postimg.cc/KYhqQXJK/original.jpg",
+    "price": "146.000",
     "type": "interes"
   }
 ]

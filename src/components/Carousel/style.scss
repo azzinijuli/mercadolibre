@@ -1,8 +1,11 @@
 .carousel-container {
-  margin: 2rem 3.5rem;
+  margin-top: 2rem;
+  overflow: hidden;
   .carousel-title {
     font-size: 1.5em;
     color: #666;
-    margin-left: 0.3rem;
+    display: inline-flex;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
   }
 }
