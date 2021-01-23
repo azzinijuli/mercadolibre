@@ -5,6 +5,14 @@
   width: 220px;
   padding: 0.5rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+    transition: 0.3s ease-out;
+  }
 
   .image-container {
     .product-image {

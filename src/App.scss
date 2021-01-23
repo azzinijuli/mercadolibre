@@ -43,24 +43,3 @@
     }
   }
 }
-
-.slick-arrow {
-  z-index: 999;
-}
-
-.slick-prev {
-  left: 0;
-
-  &::before {
-    font-size: 25px;
-    color: #a7a5a5;
-  }
-}
-
-.slick-next {
-  right: 0;
-  &::before {
-    font-size: 25px;
-    color: #a7a5a5;
-  }
-}
