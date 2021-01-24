@@ -3,23 +3,22 @@
   background-color: white;
   height: 320px;
   width: 220px;
-  padding: 0.5rem;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   &:hover {
     cursor: pointer;
     transform: scale(1.025);
     transition: 0.3s ease-out;
   }
-
   .image-container {
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    width: 220px;
     .product-image {
       object-fit: cover;
       max-height: 220px;
       max-width: 220px;
-      border-bottom: 1px solid #f1f1f180;
+      border-bottom: 1px solid #a7a7a780;
     }
   }
   .product-description {
