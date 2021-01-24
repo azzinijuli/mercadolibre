@@ -17,7 +17,11 @@ function App() {
         <div className="countries-container">
           {data.map((country, key) => {
             return (
-              <Link className="country-container" to={`/shop/${country.site}`}>
+              <Link
+                className="country-container"
+                to={`/shop/${country.site}`}
+                key={key}
+              >
                 <img className="country-flag" src={country.flag} />
                 <p className="country-name">{country.name}</p>
               </Link>

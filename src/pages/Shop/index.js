@@ -1,33 +1,31 @@
 import React, { useState, useEffect } from "react";
-import "../Shop/style.scss";
 import Navbar from "../../components/Navbar";
 import Carousel from "../../components/Carousel";
 import dataprod from "../../data/dataprod.json";
 import { useParams } from "react-router-dom";
+import "../Shop/style.scss";
 
 function Shop() {
   const [based, setBased] = useState([]);
   const [sale, setSale] = useState([]);
   const [interes, setInteres] = useState([]);
-  /*const { id } = useParams();
-  const [search, setSearch] = useState([]);
+  const { id } = useParams();
+  const [searchItems, setSearchItems] = useState([]);
   const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    fetchData();
-  }, []);
 
   async function fetchData() {
     const data = await fetch(
-      `https://api.mercadolibre.com/sites/${id}/search?q=chocolates`
+      `https://api.mercadolibre.com/sites/${id}/search?q=${searchItems}`
     );
     const dataJson = await data.json();
     setProducts(dataJson.results);
   }
 
-  function handleCallback(inputValue) {
-    setSearch(inputValue);
-  }*/
+  function handleCallback(searchParam) {
+    setSearchItems(searchParam);
+  }
+
+  console.log(products);
 
   function filterProducts() {
     const filteredBased = dataprod.filter((product) => {
@@ -48,9 +46,13 @@ function Shop() {
     filterProducts();
   }, []);
 
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <main className="home">
-      <Navbar /*handleCallback={(e) => handleCallback(e)}*/ />
+      <Navbar handleCallback={handleCallback} />
       <Carousel title="Basado en tu última visita" filter={based} />
       <Carousel title="Ofertas" filter={sale} />
       <Carousel title="También te puede interesar" filter={interes} />

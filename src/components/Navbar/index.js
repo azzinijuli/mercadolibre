@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import "../Navbar/style.scss";
 
 function Navbar(props) {
-  const [inputValue, setInputValue] = useState("");
+  const [search, setSearch] = useState("");
+
+  function handleClick() {
+    props.handleCallback(search);
+  }
 
   function handleChange(e) {
-    setInputValue(e.target.value);
-    props.handleCallback(inputValue);
+    const inputValue = e.target.value;
+    setSearch(inputValue);
   }
 
   return (
@@ -25,9 +29,16 @@ function Navbar(props) {
           className="input"
           placeholder="Buscar productos, marcas y más..."
         />
+        <button onClick={handleClick}>Buscar</button>
         <span className="free-shipping">Envíos gratis por Mercado Puntos</span>
       </div>
-      <div className="buttons-wrapper">
+    </nav>
+  );
+}
+
+export default Navbar;
+
+/*<div className="buttons-wrapper">
         <span className="shipping">Enviar a Buenos Aires</span>
         <ul className="buttons">
           <li className="button options">Categorías</li>
@@ -43,9 +54,4 @@ function Navbar(props) {
           <li className="button account">Ingresá</li>
           <li className="button account">Mis compras</li>
         </ul>
-      </div>
-    </nav>
-  );
-}
-
-export default Navbar;
+      </div>*/
