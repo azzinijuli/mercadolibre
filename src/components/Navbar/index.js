@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import "../Navbar/style.scss";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 function Navbar(props) {
   const [search, setSearch] = useState("");
+  const { id } = useParams();
+  let history = useHistory();
 
   function handleClick() {
     props.handleCallback(search);
+    history.push(`/shop/${id}/${search}`);
   }
 
   function handleChange(e) {
@@ -30,9 +34,7 @@ function Navbar(props) {
           className="input"
           placeholder="Buscar productos, marcas y más..."
         />
-        <Link to="/search">
-          <button onClick={handleClick}>Buscar</button>
-        </Link>
+        <button onClick={handleClick}>Buscar</button>
         <span className="free-shipping">Envíos gratis por Mercado Puntos</span>
       </div>
     </nav>

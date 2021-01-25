@@ -11,7 +11,7 @@ ReactDOM.render(
   <Router>
     <Route exact path="/" component={App} />
     <Route exact path="/shop/:id" component={Shop} />
-    <Route exact path="/search" component={ProductSearch} />
+    <Route exact path="/shop/:id/:search" component={ProductSearch} />
   </Router>,
   document.getElementById("root")
 );
