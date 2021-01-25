@@ -10,8 +10,12 @@ function Shop() {
   const [sale, setSale] = useState([]);
   const [interes, setInteres] = useState([]);
   const { id } = useParams();
-  const [searchItems, setSearchItems] = useState([]);
+  const [searchItems, setSearchItems] = useState("");
   const [products, setProducts] = useState([]);
+
+  function handleCallback(searchParam) {
+    setSearchItems(searchParam);
+  }
 
   async function fetchData() {
     const data = await fetch(
@@ -20,12 +24,6 @@ function Shop() {
     const dataJson = await data.json();
     setProducts(dataJson.results);
   }
-
-  function handleCallback(searchParam) {
-    setSearchItems(searchParam);
-  }
-
-  console.log(products);
 
   function filterProducts() {
     const filteredBased = dataprod.filter((product) => {
@@ -44,15 +42,12 @@ function Shop() {
 
   useEffect(() => {
     filterProducts();
-  }, []);
-
-  useEffect(() => {
     fetchData();
   }, []);
 
   return (
     <main className="home">
-      <Navbar handleCallback={handleCallback} />
+      <Navbar handleCallback={handleCallback} searchItems={searchItems} />
       <Carousel title="Basado en tu última visita" filter={based} />
       <Carousel title="Ofertas" filter={sale} />
       <Carousel title="También te puede interesar" filter={interes} />

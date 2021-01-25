@@ -25,7 +25,7 @@ function Navbar(props) {
         </div>
         <input
           onChange={handleChange}
-          type="text"
+          type="search"
           className="input"
           placeholder="Buscar productos, marcas y más..."
         />
