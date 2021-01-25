@@ -43,7 +43,9 @@ function Shop() {
   useEffect(() => {
     filterProducts();
     fetchData();
-  }, []);
+  }, [searchItems]);
+
+  console.log(products);
 
   return (
     <main className="home">

@@ -7,7 +7,7 @@ function Card(props) {
     <div className="product-container">
       <div className="image-container">
         <img
-          src={product.img}
+          src={product.thumbnail}
           alt="product thumbnail"
           className="product-image"
         />

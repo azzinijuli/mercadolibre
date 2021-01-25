@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Navbar/style.scss";
+import { Link } from "react-router-dom";
 
 function Navbar(props) {
   const [search, setSearch] = useState("");
@@ -29,7 +30,9 @@ function Navbar(props) {
           className="input"
           placeholder="Buscar productos, marcas y más..."
         />
-        <button onClick={handleClick}>Buscar</button>
+        <Link to="/search">
+          <button onClick={handleClick}>Buscar</button>
+        </Link>
         <span className="free-shipping">Envíos gratis por Mercado Puntos</span>
       </div>
     </nav>
