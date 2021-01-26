@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import Card from "../../components/Card";
+import "../ProductSearch/style.scss";
 
 function ProductSearch() {
   const params = useParams();
@@ -21,13 +22,17 @@ function ProductSearch() {
   useEffect(() => {
     fetchData();
   }, [search]);
-
+  console.log(products);
   return (
     <div>
       Soy la búsqueda del producto: {params.search}
-      <div>
+      <div className="products-grid">
         {products.map((product, key) => {
-          return <Card product={product} key={key} />;
+          return (
+            <div className="product-wrapper" key={key}>
+              <Card product={product} />
+            </div>
+          );
         })}
       </div>
     </div>

@@ -10,16 +10,16 @@
     transition: 0.3s ease-out;
   }
   .image-container {
-    display: flex;
-    justify-content: center;
+    background-position: center;
+    background-size: cover;
     height: 220px;
     width: 220px;
-    .product-image {
+    border-bottom: 1px solid #a7a7a780;
+    /*.product-image {
       object-fit: cover;
       max-height: 220px;
       max-width: 220px;
-      border-bottom: 1px solid #a7a7a780;
-    }
+    }*/
   }
   .product-description {
     display: flex;

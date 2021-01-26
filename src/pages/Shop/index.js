@@ -15,18 +15,19 @@ function Shop() {
   }
 
   function filterProducts() {
-    const filteredBased = dataprod.filter((product) => {
-      return product.type == "based";
+    const based = filter("based");
+    const sale = filter("sale");
+    const interes = filter("interes");
+
+    setBased(based);
+    setSale(sale);
+    setInteres(interes);
+  }
+
+  function filter(type) {
+    return dataprod.filter((product) => {
+      return product.type == type;
     });
-    const filteredSale = dataprod.filter((product) => {
-      return product.type == "sale";
-    });
-    const filteredInteres = dataprod.filter((product) => {
-      return product.type == "interes";
-    });
-    setBased(filteredBased);
-    setSale(filteredSale);
-    setInteres(filteredInteres);
   }
 
   useEffect(() => {

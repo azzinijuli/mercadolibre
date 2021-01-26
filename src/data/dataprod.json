@@ -1,126 +1,126 @@
 [
   {
-    "name": "MacBook Air 13 Intel Core i5 1.1 GHz 8 GB RAM 512 GB",
+    "title": "MacBook Air 13 Intel Core i5 1.1 GHz 8 GB RAM 512 GB",
     "thumbnail": "https://i.postimg.cc/kGptGpXz/1826-1.jpg",
     "price": "147.250",
     "type": "based"
   },
   {
-    "name": "MacBook Pro. Modelo Mr9u2. Memoria RAM, 8 GB",
+    "title": "MacBook Pro. Modelo Mr9u2. Memoria RAM, 8 GB",
     "thumbnail": "https://i.postimg.cc/dtgyKpfT/450-1000.jpg",
     "price": "164.999",
     "type": "based"
   },
   {
-    "name": "Macbook Air 2020 Rose Gold",
+    "title": "Macbook Air 2020 Rose Gold",
     "thumbnail": "https://i.postimg.cc/HWZM6V4z/Apple-new-macbook-air-new-magic-keyboard-03182020.jpg",
     "price": "189.999",
     "type": "based"
   },
   {
-    "name": "Notebook Dell Inspiron 3493 14''. Intel® Core I5",
+    "title": "Notebook Dell Inspiron 3493 14''. Intel® Core I5",
     "thumbnail": "https://i.postimg.cc/ncK33S9M/8b9923641f4d8ef73527a27a15a4a4ad4c8c33b5-e4880207-588c-4953-83d1-20486e3c1655-1024x1024-2x.jpg",
     "price": "120.399",
     "type": "based"
   },
   {
-    "name": "Macbook Air A2179 Space Gray",
+    "title": "Macbook Air A2179 Space Gray",
     "thumbnail": "https://i.postimg.cc/yYDZtsLH/fotonoticia-20200318144340-420.jpg",
     "price": "371.184",
     "type": "based"
   },
   {
-    "name": "Notebook Dell Latitude 3510 15,6''. Intel® Core I7",
+    "title": "Notebook Dell Latitude 3510 15,6''. Intel® Core I7",
     "thumbnail": "https://i.postimg.cc/wTDjZg0g/L3510-UBUNTU-2-3629c8d1-8b5b-4330-9ce5-4c02fb1d903d-1024x1024-2x.jpg",
     "price": "163.999",
     "type": "based"
   },
   {
-    "name": "Notebook Dell Inspiron 5593 15,6''. Intel® Core I7 ",
+    "title": "Notebook Dell Inspiron 5593 15,6''. Intel® Core I7 ",
     "thumbnail": "https://i.postimg.cc/wjZg0Bm6/0b84e37d92d71c3a1a2fea0bba555bd593171fce-b01de2f7-4774-427f-a945-aae38629e91b-1024x1024-2x.jpg",
     "price": "179.999",
     "type": "based"
   },
   {
-    "name": "Auricular Sony Mdr Xb650 Bluetooth Nfc Plegable",
+    "title": "Auricular Sony Mdr Xb650 Bluetooth Nfc Plegable",
     "thumbnail": "https://i.postimg.cc/RFjWznsx/auriculares-inalambricos-sony-ch400-gris.jpg",
     "price": "5.499",
     "type": "sale"
   },
   {
-    "name": "Auriculares Bluetooth Inalámbricos Manos Libre",
+    "title": "Auriculares Bluetooth Inalámbricos Manos Libre",
     "thumbnail": "https://i.postimg.cc/yxck6Ytg/auriculares-inalambricos-sony-rf811rk.jpg",
     "price": "8.599",
     "type": "sale"
   },
   {
-    "name": "Auriculares Sony Wirless Noise Cancelling",
+    "title": "Auriculares Sony Wirless Noise Cancelling",
     "thumbnail": "https://i.postimg.cc/c1nKBXCx/sony-wireless-noise-cancelling-headphones-wh-1000xm3.jpg",
     "price": "27.800",
     "type": "sale"
   },
   {
-    "name": "Audífonos Sony Mega Bass",
+    "title": "Audífonos Sony Mega Bass",
     "thumbnail": "https://i.postimg.cc/pLXX4ZWn/1457370364-1220508.jpg",
     "price": "12.899",
     "type": "sale"
   },
   {
-    "name": "Auriculares Sony ZX Series MDR-ZX110",
+    "title": "Auriculares Sony ZX Series MDR-ZX110",
     "thumbnail": "https://i.postimg.cc/GhbcTQsS/6329901.jpg",
     "price": "2.498",
     "type": "sale"
   },
   {
-    "name": "Auriculares Gamer Razer Kraken X Lite",
+    "title": "Auriculares Gamer Razer Kraken X Lite",
     "thumbnail": "https://i.postimg.cc/Kvg242Ww/razer-kraken-x-usb-2019-render-v04.jpg",
     "price": "5395",
     "type": "sale"
   },
   {
-    "name": "Auriculares gamer inalámbricos HyperX",
+    "title": "Auriculares gamer inalámbricos HyperX",
     "thumbnail": "https://i.postimg.cc/zXk9yGjd/467-AURICULAR-HYPERX-CLOUD-FLIGHT-WIRELESS1597792577728.jpg",
     "price": "16590",
     "type": "sale"
   },
   {
-    "name": "Samsung Galaxy A21",
+    "title": "Samsung Galaxy A21",
     "thumbnail": "https://i.postimg.cc/63GrkZVC/450-1000.jpg",
     "price": "41.999",
     "type": "interes"
   },
   {
-    "name": "Samsung Galaxy A51 128GB RAM",
+    "title": "Samsung Galaxy A51 128GB RAM",
     "thumbnail": "https://i.postimg.cc/mZYnng0b/samsung-galaxy-a51-dual-sim-en-blanco-de-128gb-y-4gb-ram-sm-a515f-ds.jpg",
     "price": "26.000",
     "type": "interes"
   },
   {
-    "name": "Samsung Galaxy A01",
+    "title": "Samsung Galaxy A01",
     "thumbnail": "https://i.postimg.cc/D0rqZKMZ/Samsung-Galaxy-A01-Core-04-Abaddy-Express.jpg",
     "price": "12.999",
     "type": "interes"
   },
   {
-    "name": "Samsung Galaxy A31 Procesador Octa-Core",
+    "title": "Samsung Galaxy A31 Procesador Octa-Core",
     "thumbnail": "https://i.postimg.cc/VN6kmqvm/celular-samsung-galaxy-a31-duos-128gb-prism-crush-white-htesam558.jpg",
     "price": "34.999",
     "type": "interes"
   },
   {
-    "name": "Samsung Galaxy S20 Fan Edition 5G",
+    "title": "Samsung Galaxy S20 Fan Edition 5G",
     "thumbnail": "https://i.postimg.cc/SRdJ3QPW/S20-FE-Navy-SKUimage-MO-img.jpg",
     "price": "227.999",
     "type": "interes"
   },
   {
-    "name": "Samsung Galaxy A71 128 GB",
+    "title": "Samsung Galaxy A71 128 GB",
     "thumbnail": "https://i.postimg.cc/Z580B3QG/samsung-a71-plateado-600x600.jpg",
     "price": "69.000",
     "type": "interes"
   },
   {
-    "name": "Celular Galaxy Note20 Ultra Bronce",
+    "title": "Celular Galaxy Note20 Ultra Bronce",
     "thumbnail": "https://i.postimg.cc/KYhqQXJK/original.jpg",
     "price": "146.000",
     "type": "interes"
