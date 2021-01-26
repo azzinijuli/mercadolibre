@@ -8,7 +8,7 @@ function Card(props) {
       <div
         className="image-container"
         style={{
-          backgroundImage: `url("http://http2.mlstatic.com/D_757844-MLA31023376000_062019-I.jpg%22.replace(/-I.jpg$/, "-E.webp")")`,
+          backgroundImage: `url(${product.thumbnail}.replace(/-I.jpg$/, "-E.webp"))`,
         }}
       ></div>
       <div className="product-description">
@@ -20,9 +20,3 @@ function Card(props) {
 }
 
 export default Card;
-
-//<img
-//  src={product.thumbnail}
-//alt="product thumbnail"
-//className = "product-image";
-///>
