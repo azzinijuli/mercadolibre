@@ -8,7 +8,10 @@ function Card(props) {
       <div
         className="image-container"
         style={{
-          backgroundImage: `url(${product.thumbnail}.replace(/-I.jpg$/, "-E.webp"))`,
+          backgroundImage: `url(${product.thumbnail.replace(
+            /-I.jpg$/,
+            "-E.webp"
+          )})`,
         }}
       ></div>
       <div className="product-description">
