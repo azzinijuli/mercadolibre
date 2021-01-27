@@ -1,15 +1,17 @@
 import React, { useState } from "react";
-import "../Navbar/style.scss";
 import { useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import "../Navbar/style.scss";
 
 function Navbar(props) {
   const [search, setSearch] = useState("");
   const { id } = useParams();
   let history = useHistory();
+  const element = <FontAwesomeIcon icon={faSearch} />;
 
   function handleClick() {
-    props.handleCallback(search);
     history.push(`/shop/${id}/${search}`);
   }
 
@@ -34,7 +36,7 @@ function Navbar(props) {
           className="input"
           placeholder="Buscar productos, marcas y más..."
         />
-        <button onClick={handleClick}>Buscar</button>
+        <button onClick={handleClick}>{element}</button>
         <span className="free-shipping">Envíos gratis por Mercado Puntos</span>
       </div>
     </nav>

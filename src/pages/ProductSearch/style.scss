@@ -1,4 +1,27 @@
 .products-grid {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
+  .product-wrapper {
+    flex-grow: 1;
+    width: calc(33% - 20px);
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.025);
+      transition: 0.3s ease-out;
+    }
+    @media (max-width: 768px) {
+      width: calc(50% - 20px);
+      margin: 10px;
+    }
+
+    @media (max-width: 480px) {
+      width: calc(100% - 20px);
+      margin: 10px;
+    }
+  }
 }

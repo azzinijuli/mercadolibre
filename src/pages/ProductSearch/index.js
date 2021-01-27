@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import Card from "../../components/Card";
+import Navbar from "../../components/Navbar";
 import "../ProductSearch/style.scss";
 
 function ProductSearch() {
@@ -24,18 +25,21 @@ function ProductSearch() {
   }, [search]);
   console.log(products);
   return (
-    <div>
-      Soy la búsqueda del producto: {params.search}
-      <div className="products-grid">
-        {products.map((product, key) => {
-          return (
-            <div className="product-wrapper" key={key}>
-              <Card product={product} />
-            </div>
-          );
-        })}
+    <>
+      <Navbar />
+      <div>
+        Soy la búsqueda del producto: {params.search}
+        <div className="products-grid">
+          {products.map((product, key) => {
+            return (
+              <div className="product-wrapper" key={key}>
+                <Card product={product} />
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
