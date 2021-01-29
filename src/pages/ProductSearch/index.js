@@ -23,7 +23,7 @@ function ProductSearch() {
   useEffect(() => {
     fetchData();
   }, [search]);
-  console.log(products);
+
   return (
     <>
       <Navbar />

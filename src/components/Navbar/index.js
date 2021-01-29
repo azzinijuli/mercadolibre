@@ -8,11 +8,17 @@ import "../Navbar/style.scss";
 function Navbar(props) {
   const [search, setSearch] = useState("");
   const { id } = useParams();
-  let history = useHistory();
+  const history = useHistory();
   const element = <FontAwesomeIcon icon={faSearch} />;
 
   function handleClick() {
     history.push(`/shop/${id}/${search}`);
+  }
+
+  function handleKeyPress(event) {
+    if (event.key === "Enter") {
+      history.push(`/shop/${id}/${search}`);
+    }
   }
 
   function handleChange(e) {
@@ -33,7 +39,8 @@ function Navbar(props) {
         <div className="form-wrapper">
           <input
             onChange={handleChange}
-            type="search"
+            onKeyPress={handleKeyPress}
+            type="text"
             className="input"
             placeholder="Buscar productos, marcas y más..."
           />

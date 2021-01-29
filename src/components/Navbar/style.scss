@@ -16,7 +16,7 @@
       display: flex;
       box-shadow: 3px 5px 10px #a7a5a53f;
       .input {
-        width: 520px;
+        width: 480px;
         height: 35px;
         border: none;
         border-radius: 2px;
@@ -34,14 +34,14 @@
         background-color: white;
         color: #666;
         padding: 0 0.8rem;
-        &::before {
+        /*&::before {
           content: "";
           height: 25px;
           display: block;
           border-left: 1px solid red;
           position: absolute;
-          margin-right: 350px;
-        }
+          margin-right: 10px;
+        }*/
       }
     }
     .free-shipping {
