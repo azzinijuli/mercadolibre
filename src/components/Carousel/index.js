@@ -6,7 +6,7 @@ function Carousel(props) {
   return (
     <>
       <section className="carousel-container">
-        <span className="carousel-title">{props.title}</span>
+        <h3 className="carousel-title">{props.title}</h3>
         <InnerCarousel filter={props.filter} />
       </section>
     </>

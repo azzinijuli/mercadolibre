@@ -3,7 +3,7 @@ import "../Card/style.scss";
 
 function Card({ product }) {
   return (
-    <div className="product-container">
+    <div className="product-container animate active">
       <div
         className="image-container"
         style={{

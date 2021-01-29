@@ -27,8 +27,10 @@ function ProductSearch() {
   return (
     <>
       <Navbar />
-      <div>
-        Soy la búsqueda del producto: {params.search}
+      <div className="search-home-wrapper">
+        <div className="sidebar">
+          <span>Resultados de tu búsqueda: {params.search}</span>
+        </div>
         <div className="products-grid">
           {products.map((product, key) => {
             return (
