@@ -12,17 +12,36 @@
       height: 40px;
       margin: 0.5rem 0;
     }
-    .input {
-      width: 520px;
-      height: 35px;
-      border: none;
-      border-radius: 2px;
+    .form-wrapper {
+      display: flex;
       box-shadow: 3px 5px 10px #a7a5a53f;
-      &::placeholder {
-        font-family: "Nunito", sans-serif;
-        font-size: 1rem;
+      .input {
+        width: 520px;
+        height: 35px;
+        border: none;
+        border-radius: 2px;
         padding-left: 0.5rem;
-        color: #cac7c7;
+        position: relative;
+        &::placeholder {
+          font-family: "Nunito", sans-serif;
+          font-size: 1rem;
+          color: #cac7c7;
+        }
+      }
+      .search-button {
+        font-size: 1.2em;
+        border: none;
+        background-color: white;
+        color: #666;
+        padding: 0 0.8rem;
+        &::before {
+          content: "";
+          height: 25px;
+          display: block;
+          border-left: 1px solid red;
+          position: absolute;
+          margin-right: 350px;
+        }
       }
     }
     .free-shipping {

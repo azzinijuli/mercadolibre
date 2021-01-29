@@ -30,13 +30,17 @@ function Navbar(props) {
             alt="nav-logo"
           />
         </div>
-        <input
-          onChange={handleChange}
-          type="search"
-          className="input"
-          placeholder="Buscar productos, marcas y más..."
-        />
-        <button onClick={handleClick}>{element}</button>
+        <div className="form-wrapper">
+          <input
+            onChange={handleChange}
+            type="search"
+            className="input"
+            placeholder="Buscar productos, marcas y más..."
+          />
+          <button onClick={handleClick} className="search-button">
+            {element}
+          </button>
+        </div>
         <span className="free-shipping">Envíos gratis por Mercado Puntos</span>
       </div>
     </nav>
