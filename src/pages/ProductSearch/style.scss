@@ -1,22 +1,27 @@
 .search-home-wrapper {
   display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
   .sidebar {
-    width: 500px;
+    display: flex;
+    max-width: 300px;
     flex-grow: 1;
     width: 100%;
   }
-
   .products-grid {
+    max-width: 750px;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     flex-grow: 1;
     .product-wrapper {
       flex-grow: 1;
       width: calc(33% - 20px);
-      margin: 10px;
+      margin: 0 10px 10px 0;
       background-color: white;
       border-radius: 4px;
       overflow: hidden;
+      display: flex;
+      justify-content: center;
 
       @media (max-width: 768px) {
         width: calc(50% - 20px);

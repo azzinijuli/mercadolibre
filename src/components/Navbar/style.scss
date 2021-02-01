@@ -2,39 +2,39 @@
   width: 100%;
   background-color: #ffe600;
   display: flex;
-  flex-direction: column;
-  .input-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  .logo-wrapper {
     .nav-logo {
       width: 140px;
       height: 40px;
       margin: 0.5rem 0;
     }
-    .form-wrapper {
-      display: flex;
-      box-shadow: 3px 5px 10px #a7a5a53f;
-      .input {
-        width: 480px;
-        height: 35px;
-        border: none;
-        border-radius: 2px;
-        padding-left: 0.5rem;
-        position: relative;
-        &::placeholder {
-          font-family: "Nunito", sans-serif;
-          font-size: 1rem;
-          color: #cac7c7;
-        }
+  }
+  .form-wrapper {
+    display: flex;
+    box-shadow: 3px 5px 10px #a7a5a53f;
+    .input {
+      width: 480px;
+      height: 35px;
+      border: none;
+      border-radius: 2px;
+      padding-left: 0.5rem;
+      position: relative;
+      &::placeholder {
+        font-family: "Nunito", sans-serif;
+        font-size: 1rem;
+        color: #cac7c7;
       }
-      .search-button {
-        font-size: 1.2em;
-        border: none;
-        background-color: white;
-        color: #666;
-        padding: 0 0.8rem;
-        /*&::before {
+    }
+    .search-button {
+      font-size: 1.2em;
+      border: none;
+      background-color: white;
+      color: #666;
+      padding: 0 0.8rem;
+      /*&::before {
           content: "";
           height: 25px;
           display: block;
@@ -42,33 +42,34 @@
           position: absolute;
           margin-right: 10px;
         }*/
-      }
     }
+  }
+  .shipping-wrapper {
     .free-shipping {
       font-size: 1.1rem;
       font-weight: bold;
     }
   }
-  .buttons-wrapper {
+}
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  .shipping {
+    margin: 0.5rem 0rem;
+  }
+  .buttons {
     display: flex;
-    justify-content: space-around;
-    font-size: 0.9rem;
-    .shipping {
-      margin: 0.5rem 0rem;
-    }
-    .buttons {
-      display: flex;
-      padding: 0.5rem 0;
-      .button {
-        margin-right: 0.8rem;
+    padding: 0.5rem 0;
+    .button {
+      margin-right: 0.8rem;
+      font-size: 0.9rem;
+      &.options {
+        color: rgb(73, 73, 73);
+      }
+      &.account {
         font-size: 0.9rem;
-        &.options {
-          color: rgb(73, 73, 73);
-        }
-        &.account {
-          font-size: 0.9rem;
-          color: rgb(26, 26, 26);
-        }
+        color: rgb(26, 26, 26);
       }
     }
   }

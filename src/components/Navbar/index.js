@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 import "../Navbar/style.scss";
 
 function Navbar(props) {
@@ -10,14 +11,17 @@ function Navbar(props) {
   const { id } = useParams();
   const history = useHistory();
   const element = <FontAwesomeIcon icon={faSearch} />;
+  const [handleSearch] = useLocalStorage();
 
   function handleClick() {
     history.push(`/shop/${id}/${search}`);
+    handleSearch(search);
   }
 
   function handleKeyPress(event) {
     if (event.key === "Enter") {
       history.push(`/shop/${id}/${search}`);
+      handleSearch(search);
     }
   }
 
@@ -28,26 +32,26 @@ function Navbar(props) {
 
   return (
     <nav className="navbar">
-      <div className="input-wrapper">
-        <div>
-          <img
-            className="nav-logo"
-            src="https://i.postimg.cc/q7Rk4Btn/283142-1.jpg"
-            alt="nav-logo"
-          />
-        </div>
-        <div className="form-wrapper">
-          <input
-            onChange={handleChange}
-            onKeyPress={handleKeyPress}
-            type="text"
-            className="input"
-            placeholder="Buscar productos, marcas y más..."
-          />
-          <button onClick={handleClick} className="search-button">
-            {element}
-          </button>
-        </div>
+      <div className="logo-wrapper">
+        <img
+          className="nav-logo"
+          src="https://i.postimg.cc/q7Rk4Btn/283142-1.jpg"
+          alt="nav-logo"
+        />
+      </div>
+      <div className="form-wrapper">
+        <input
+          onChange={handleChange}
+          onKeyPress={handleKeyPress}
+          type="text"
+          className="input"
+          placeholder="Buscar productos, marcas y más..."
+        />
+        <button onClick={handleClick} className="search-button">
+          {element}
+        </button>
+      </div>
+      <div className="shipping-wrapper">
         <span className="free-shipping">Envíos gratis por Mercado Puntos</span>
       </div>
     </nav>

@@ -7,7 +7,7 @@ import "../Shop/style.scss";
 function Shop() {
   const [based, setBased] = useState([]);
   const [sale, setSale] = useState([]);
-  const [interes, setInteres] = useState([]);
+  const [interest, setInterest] = useState([]);
   const [searchItems, setSearchItems] = useState("");
 
   function handleCallback(searchParam) {
@@ -17,11 +17,11 @@ function Shop() {
   function filterProducts() {
     const based = filter("based");
     const sale = filter("sale");
-    const interes = filter("interes");
+    const interest = filter("interest");
 
     setBased(based);
     setSale(sale);
-    setInteres(interes);
+    setInterest(interest);
   }
 
   function filter(type) {
@@ -39,7 +39,7 @@ function Shop() {
       <Navbar handleCallback={handleCallback} searchItems={searchItems} />
       <Carousel title="Basado en tu última visita" filter={based} />
       <Carousel title="Ofertas" filter={sale} />
-      <Carousel title="También te puede interesar" filter={interes} />
+      <Carousel title="También te puede interesar" filter={interest} />
     </main>
   );
 }
