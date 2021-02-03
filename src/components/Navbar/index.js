@@ -40,16 +40,25 @@ function Navbar(props) {
         />
       </div>
       <div className="form-wrapper">
-        <input
-          onChange={handleChange}
-          onKeyPress={handleKeyPress}
-          type="text"
-          className="input"
-          placeholder="Buscar productos, marcas y más..."
-        />
-        <button onClick={handleClick} className="search-button">
-          {element}
-        </button>
+        <div className="searchbar-wrapper">
+          <input
+            onChange={handleChange}
+            onKeyPress={handleKeyPress}
+            type="text"
+            className="input"
+            placeholder="Buscar productos, marcas y más..."
+          />
+          <button onClick={handleClick} className="search-button">
+            {element}
+          </button>
+        </div>
+        <div className="recent-searches">
+          <li className="recent-search">Búsqueda reciente</li>
+          <li className="recent-search">Búsqueda reciente</li>
+          <li className="recent-search">Búsqueda reciente</li>
+          <li className="recent-search">Búsqueda reciente</li>
+          <li className="recent-search">Búsqueda reciente</li>
+        </div>
       </div>
       <div className="shipping-wrapper">
         <span className="free-shipping">Envíos gratis por Mercado Puntos</span>

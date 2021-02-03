@@ -13,35 +13,48 @@
     }
   }
   .form-wrapper {
-    display: flex;
-    box-shadow: 3px 5px 10px #a7a5a53f;
-    .input {
-      width: 480px;
-      height: 35px;
-      border: none;
-      border-radius: 2px;
-      padding-left: 0.5rem;
+    .searchbar-wrapper {
+      display: flex;
+      box-shadow: 3px 5px 10px #a7a5a53f;
       position: relative;
-      &::placeholder {
-        font-family: "Nunito", sans-serif;
-        font-size: 1rem;
-        color: #cac7c7;
+      .input {
+        width: 480px;
+        height: 35px;
+        border: none;
+        border-radius: 2px;
+        padding-left: 1rem;
+        position: relative;
+        &::placeholder {
+          font-family: "Nunito", sans-serif;
+          font-size: 1rem;
+          color: #cac7c7;
+        }
+      }
+      .search-button {
+        font-size: 1.2em;
+        border: none;
+        background-color: white;
+        color: #666;
+        padding: 0 0.8rem;
+        /*&::before {
+            content: "";
+            height: 25px;
+            display: block;
+            border-left: 1px solid red;
+            position: absolute;
+            margin-right: 10px;
+          }*/
       }
     }
-    .search-button {
-      font-size: 1.2em;
-      border: none;
+    .recent-searches {
+      list-style: none;
+      margin-left: 1rem;
+      position: absolute;
       background-color: white;
-      color: #666;
-      padding: 0 0.8rem;
-      /*&::before {
-          content: "";
-          height: 25px;
-          display: block;
-          border-left: 1px solid red;
-          position: absolute;
-          margin-right: 10px;
-        }*/
+      z-index: 9999;
+      .recent-search {
+        line-height: 1.5em;
+      }
     }
   }
   .shipping-wrapper {
