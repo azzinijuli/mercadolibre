@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 import "../Navbar/style.scss";
 
@@ -10,8 +11,9 @@ function Navbar(props) {
   const [search, setSearch] = useState("");
   const { id } = useParams();
   const history = useHistory();
-  const element = <FontAwesomeIcon icon={faSearch} />;
-  const [handleSearch] = useLocalStorage();
+  const searchIcon = <FontAwesomeIcon icon={faSearch} />;
+  const clockIcon = <FontAwesomeIcon icon={faClock} />;
+  const [getter, handleSearch] = useLocalStorage();
 
   function handleClick() {
     history.push(`/shop/${id}/${search}`);
@@ -40,24 +42,25 @@ function Navbar(props) {
         />
       </div>
       <div className="form-wrapper">
-        <div className="searchbar-wrapper">
-          <input
-            onChange={handleChange}
-            onKeyPress={handleKeyPress}
-            type="text"
-            className="input"
-            placeholder="Buscar productos, marcas y más..."
-          />
-          <button onClick={handleClick} className="search-button">
-            {element}
-          </button>
-        </div>
+        <input
+          onChange={handleChange}
+          onKeyPress={handleKeyPress}
+          type="text"
+          className="input"
+          placeholder="Buscar productos, marcas y más..."
+        />
+        <button onClick={handleClick} className="search-button">
+          {searchIcon}
+        </button>
         <div className="recent-searches">
-          <li className="recent-search">Búsqueda reciente</li>
-          <li className="recent-search">Búsqueda reciente</li>
-          <li className="recent-search">Búsqueda reciente</li>
-          <li className="recent-search">Búsqueda reciente</li>
-          <li className="recent-search">Búsqueda reciente</li>
+          {getter.map((item, key) => {
+            return (
+              <li className="recent-search" key={key}>
+                <span className="clock-icon">{clockIcon}</span>
+                {item}
+              </li>
+            );
+          })}
         </div>
       </div>
       <div className="shipping-wrapper">

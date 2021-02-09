@@ -8,5 +8,9 @@ export const useLocalStorage = () => {
     localStorage.setItem("searches", stringifiedSearches);
     console.log(searchInfo);
   };
-  return [handleSearch];
+
+  const getSearches = localStorage.getItem("searches") ?? [];
+  const parsedSearches = JSON.parse(getSearches);
+
+  return [parsedSearches, handleSearch];
 };
