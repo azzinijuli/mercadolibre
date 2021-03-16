@@ -6,10 +6,9 @@ export const useLocalStorage = () => {
     parsedSearches.push(searchInfo);
     const stringifiedSearches = JSON.stringify(parsedSearches);
     localStorage.setItem("searches", stringifiedSearches);
-    console.log(searchInfo);
   };
 
-  const getSearches = localStorage.getItem("searches") ?? [];
+  const getSearches = localStorage.getItem("searches") ?? "[]";
   const parsedSearches = JSON.parse(getSearches);
 
   return [parsedSearches, handleSearch];
